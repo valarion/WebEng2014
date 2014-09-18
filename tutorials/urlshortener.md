@@ -7,7 +7,7 @@ Prerequisites:
 - [Redis 2.8](http://redis.io/download).
 - [cURL](http://curl.haxx.se/) or similar for testing.
 - [Sublime Text](https://www.sublimetext.com/) or similar as editor.
-- 
+
 ## Create the project stub
 ```
 $ mkdir UrlShortener
@@ -266,11 +266,11 @@ curl -v -d "url=ftp://www.unizar.es/" -X POST http://localhost:8080
 ```
 ## Scalable URL Shortener (version 3)
 Add the following dependency to ```build.gradle```:
-```Groovy
+```groovy
 compile "org.springframework.boot:spring-boot-starter-redis:$springVersion"
 ```
 Edit the class ```UrlShortener``` and rewrite the code as follows:
-```Java
+```java
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
