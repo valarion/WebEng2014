@@ -3,3 +3,6 @@
 /.settings/
 /.project
 /.classpath
+/address_book.xml
+/schema1.xsd
+/.gradle/
