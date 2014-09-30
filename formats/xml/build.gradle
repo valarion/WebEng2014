@@ -2,7 +2,8 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 
 task addPerson(type: JavaExec, dependsOn: classes) {
-	if (gradle.startParameter.logLevel < LogLevel.QUIET) {
+	if ('addPerson' in gradle.startParameter.taskNames &&
+	    gradle.startParameter.logLevel < LogLevel.QUIET) {
         println "Note: The task 'addPerson' works best in quiet mode (gradle -q addPerson)"
     }
     group 			= 'Formats XML'
