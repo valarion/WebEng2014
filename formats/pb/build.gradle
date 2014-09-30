@@ -1,0 +1,40 @@
+apply plugin: 'protobuf'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.andrewkroh.gradle:gradle-protobuf-plugin:0.3.0'
+    } 
+}
+
+repositories {
+    mavenCentral()
+}
+
+apply plugin: 'java'
+
+sourceSets.main.java.srcDir 'build/generated/java'
+
+apply plugin: 'eclipse'
+
+task addPerson(type: JavaExec, dependsOn: classes) {
+	if ('addPerson' in gradle.startParameter.taskNames &&
+	    gradle.startParameter.logLevel < LogLevel.QUIET) {
+        println "Note: The task 'addPerson' works best in quiet mode (gradle -q addPerson)"
+    }
+    group 			= 'Formats Protocol Buffers'
+    description 	= 'Add a person to an address book'
+    main 			= 'formats.pb.AddPerson'
+	classpath 		= sourceSets.main.runtimeClasspath
+	standardInput	= System.in
+} 
+
+task listPeople(type: JavaExec) {
+    group 			= 'Formats Protocol Buffers'
+    description 	= 'List the contents of an address book'
+    main 			= 'formats.pb.ListPeople'
+	classpath 		= sourceSets.main.runtimeClasspath
+}
