@@ -2,6 +2,6 @@
 
 Examples:
 * [Hello world!](helloWorld)
-* [Hello you!(helloYou)
+* [Hello you!](helloYou)
 * [Hello singleton!](helloSingleton)
 * [Hello life cycle!](helloLifeCycle)
