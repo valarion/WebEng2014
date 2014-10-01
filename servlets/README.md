@@ -3,5 +3,5 @@
 Examples:
 * [Hello world!](helloWorld)
 * [Hello you!](helloYou)
-* [Hello singleton!](helloSingleton)
+* [Hello thread safe!](helloThreadSafe)
 * [Hello life cycle!](helloLifeCycle)
