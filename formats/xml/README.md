@@ -1,4 +1,4 @@
-# Serialization formats :: JAXB 2.0
+# XML with JAXB 2.0
 This project contains a demonstration of [JAXB 2.0](http://docs.oracle.com/javase/tutorial/jaxb/intro/). JAXB provides a way to bind XML schemas and Java classes.
 
 The following examples are included:
