@@ -1,4 +1,4 @@
-# Serialization formats :: Protocol Buffers
+# Google Protocol Buffers
 This project contains a demonstration of [Protocol Buffers](https://developers.google.com/protocol-buffers/). Protocol buffers are Google's language-neutral, platform-neutral, extensible mechanism for serializing structured data using Java, Python and C++.
 
 The following examples are included:
