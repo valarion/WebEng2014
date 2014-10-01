@@ -1,3 +1,2 @@
 # Hello World!
-This project contains a demonstration of a [HttpServlet](http://docs.oracle.com/javaee/6/api/javax/servlet/http/HttpServlet.html) annotated with [@WebServlet]()
-(http://docs.oracle.com/javaee/6/api/javax/servlet/annotation/WebServlet.html). Run the code with ```gradle jettyElipseRun``` and open the page at http://localhost:8080/
+This project contains a demonstration of a [HttpServlet](http://docs.oracle.com/javaee/6/api/javax/servlet/http/HttpServlet.html) annotated with [@WebServlet](http://docs.oracle.com/javaee/6/api/javax/servlet/annotation/WebServlet.html). Deploy your code to a [Jetty](http://www.eclipse.org/jetty/) server with ```gradle jettyEclipseRun```. Then, open the page at [http://localhost:8080/](http://localhost:8080/).
