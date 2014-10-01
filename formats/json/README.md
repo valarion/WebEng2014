@@ -1,4 +1,4 @@
-# Serialization formats :: GSON
+# JSON with GSON
 This project contains a demonstration of [GSON](https://code.google.com/p/google-gson/). Gson is a Java library that can be used to convert arbitrary Java Objects into their JSON representation. It can also be used to convert a JSON string to an equivalent Java object.
 
 The following examples are included:
