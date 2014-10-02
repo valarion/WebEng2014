@@ -27,13 +27,14 @@ public class SecureServlet extends HttpServlet {
 			sb.append(" autenticated with ");
 			sb.append(req.getAuthType());
 			sb.append(", you have  ");
-			sb.append(req.isUserInRole("admin")?"the role of administrator":"an unknown role");
+			sb.append(req.isUserInRole("admin") ? "the role of administrator"
+					: "an unknown role");
 			sb.append("</h1></body></html>");
-				
-			resp.setContentType("text/html");			
+
+			resp.setContentType("text/html");
 			PrintWriter out = resp.getWriter();
 			out.write(sb.toString());
-			
+
 		} else {
 			resp.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
 		}
