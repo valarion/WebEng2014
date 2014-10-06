@@ -1,0 +1,11 @@
+?s=1&q="+document.getElementById("query").value, true);
+		xmlhttp.send();
+	}
+</script>
+</head>
+<body>
+		Search: <input id="query" type="text" onkeyup="if (event.keyCode == 13) { searchInToDoList(); return false; }"><br /> 
+		<input id="search" type="button" value="Search" onclick="searchInToDoList()" />
+			format: (field[>&lt;=:]search;)*
+	<hr>
+	<div id="ToDoList">
