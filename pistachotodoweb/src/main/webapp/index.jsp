@@ -66,9 +66,10 @@
 						<!-- Repeat the rows below with JSP -->
 						<%
 							ToDoList taskList = (ToDoList) request.getAttribute("taskList");
+							int i = 1;
 							for(ToDoTask t : taskList.getToDoList()){
 						%>
-						<tr id="myTableContent">
+						<tr class="myTableContent" id="row<%=i%>">
 							<td><%=t.getTask().trim()%></td>
 							<%
 								if(t.getContext()==null){
@@ -95,6 +96,7 @@
 							<td><%=t.getPriority()%></td>
 						</tr>
 						<%
+							i++;
 							}
 						%>
 						<!-- <tr id="myTableContent">

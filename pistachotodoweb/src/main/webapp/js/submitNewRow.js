@@ -32,7 +32,8 @@ function submitNewRow() {
 
 	// Add new row to table
 	var row = table.insertRow(table.rows.length);
-	row.id = "myTableContent";
+	row.id = "row"+(table.rows.length-1);
+	row.className = "myTableContent";
 
 	// Add cells to new row
 	var cell1 = row.insertCell(0);

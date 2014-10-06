@@ -58,6 +58,6 @@ body {
 	border-bottom: 1px solid #313030;
 }
 
-#myTableContent:hover{
+.myTableContent:hover{
 	background-color: #eec;
 }

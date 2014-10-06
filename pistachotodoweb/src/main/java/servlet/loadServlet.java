@@ -32,16 +32,11 @@ public class loadServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		//ToDoList taskList = ListToDoTasks.getTaskList();
 		ToDoList taskList = ListToDoTasks.getTaskList();
-		System.out.println("ESTOY VIVO");
 		if(taskList!=null){
-			System.out.println(taskList.getToDoList().get(0).getTask());
 			request.setAttribute("taskList", taskList);
-			System.out.println("LLEGO HASTA EL DISPATCHER");
 			RequestDispatcher rd = getServletContext().getRequestDispatcher("/index.jsp");
 			rd.forward(request, response);
-			//System.out.println("SERÉ DESPACHADO ALGÚN DÍA");
 		}
 	}
 

@@ -44,11 +44,6 @@
 				<h3>Welcome aboard PistachoToDo!</h3>
 				<br>
 				<!-- Show all TODO tasks -->
-				<!-- <table class="table">
-					<tbody>
-						
-					</tbody>
-				</table>-->
 				<div class="line-separator"></div>
 				<table class="table" id="toDoTable">
 					<tbody>
@@ -58,23 +53,25 @@
 							<td><h3>Project</h3></td>
 							<td><h3>Priority</h3></td>
 						</tr>
-						<!-- Repeat the rows below with JSP -->
-						<!-- <tr id="myTableContent">
-							<td>Create GUI</td>
-							<td>Web Engineering</td>
-							<td>Lab 0</td>
-							<td>10</td>
-						</tr>
-						<tr id="myTableContent">
-							<td>Finish lab 0</td>
-							<td>Web Engineering</td>
-							<td>Lab 0</td>
-							<td>0</td>
-						</tr>-->
 					</tbody>
 				</table>
 				<div class="line-separator"></div>
 				<br>
+				<!-- Open search task -->
+				<input id="searchButton" class="btn btn-default" type="button" onClick="openSearch()" value="Search" style="display: inline">
+				<div id="searchRowForm" style="display: none">
+					<p>Find ToDo tasks!</p>
+					<table class="table">
+						<tbody>
+							<tr>
+								<td><input type="text" id="taskSearchInput" class="form-control" placeholder="Task name" onkeyup="findTaskInTable()" /></td>
+								<td><input type="text" id="contextSearchInput" class="form-control" placeholder="Context" onkeyup="findContextInTable()"/></td>
+								<td><input type="text" id="projectSearchInput" class="form-control" placeholder="Project" onkeyup="findProjectInTable()"/></td>
+								<td><input type="text" id="prioritySearchInput" class="form-control" placeholder="Priority" onkeyup="findPriorityInTable()"/></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 				<!-- Add new TODO task -->
 				<input id="addNewRowButton" type="button" onClick="addNewRow()" value="Add new ToDo task!"
 					class="btn btn-default" style="display: inline" />
@@ -103,6 +100,8 @@
 	<!-- js scripts -->
 	<!-- load script -->
 	<script src="./js/load.js"></script>
+	<!-- search script -->
+	<script src="./js/search.js"></script>
 	<!-- addNewRow script -->
 	<script src="./js/newRow.js"></script>
 	<!-- submitNewRow script -->
