@@ -15,4 +15,6 @@ public class HelloWebService {
 }
 ```
 
-The service endpoint is at [http://localhost:8080/helloWorld](http://localhost:8080/helloWorld) (see [WEB-INF/sun-jaxws.xml](src/main/webapp/WEB-INF/sun-jaxws.xml))
+The service endpoint is at [http://localhost:8080/helloWorld](http://localhost:8080/helloWorld) (see [WEB-INF/sun-jaxws.xml](src/main/webapp/WEB-INF/sun-jaxws.xml) for the endpoint mapping). 
+
+Note that [WEB-INF/web.xml](src/main/webapp/WEB-INF/web.xml) has a ```<servlet-mapping>``` entry that matches ```/hello*``` to requests to the JAX-WS runtime.
