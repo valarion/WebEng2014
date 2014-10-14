@@ -10,3 +10,6 @@ Advanced Examples:
 * [Hello security!](helloSecurity)
 * [Hello session!](helloSession)
 * [Hello filters!](helloFilters)
+
+Demos:
+* [Hello demo!](helloDemo). Questions posted by students and its solution.
