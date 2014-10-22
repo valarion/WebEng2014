@@ -42,7 +42,7 @@ $ git merge upstream/master
 First add your changes into your local repository:
 ```
 $ cd WebEng2014
-$ git add -a
+$ git add -A
 $ git commit -m "A CONSISE DESCRIPTION"
 ```
 And then push them to your online _WebEng2014_ repository in __GitHub__:
