@@ -7,6 +7,7 @@ Source code:
 * [Representation and formats](formats)
 * [Anatomy of a simple dynamic Web application](servlets)
 * ["Big" web services](bigws)
+* [REST web services](rest)
 
 ## Lab
 * [0 - Setup](labs/setup.md)
