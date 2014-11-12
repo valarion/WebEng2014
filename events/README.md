@@ -1,5 +1,6 @@
 # Event-based web services
 
 Basic Examples:
-* [Chat server](chat)
+* [Hello WebSockets Server](hellows-server)
+* [Hello WebSockets Client](hellows-client)
 
